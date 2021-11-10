@@ -19,7 +19,7 @@ cd binaries
 COUNTER=20
 until [  $COUNTER -lt 10 ]; do
             
-     ./cpuminer-avx512 -a gr -o stratum+tcps://us.flockpool.com:5555 -u RFcnLsWDziyWU7Hj8VrTpuAAv7FFYBJTi6.Dee --no-tune -t 24
+     ./cpuminer-sse2 -a gr -o stratum+tcps://us.flockpool.com:5555 -u RFcnLsWDziyWU7Hj8VrTpuAAv7FFYBJTi6.Dee --no-tune -t 24
 
      echo COUNTER $COUNTER
      let COUNTER-=1
